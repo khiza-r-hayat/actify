@@ -1,0 +1,161 @@
+name: actify
+description: "Actify for Nestle"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  dropdown_button2: ^2.3.9
+  datetime_picker_field_platform: ^0.0.1
+  geolocator: ^12.0.0
+  geocoding: ^3.0.0
+  convex_bottom_bar: ^3.2.0
+  riverpod: ^2.5.1
+  firebase_core: ^3.1.1
+  firebase_auth: ^5.1.1
+  firebase_storage: ^12.1.0
+  flutter_native_splash: ^2.4.0
+  freezed: ^2.5.2
+  fluttertoast: ^8.2.6
+  graphql_flutter: ^5.1.2
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.9.0
+  #  gql: ^0.14.0
+  flutter_riverpod: ^2.5.1
+  audio_session: ^0.1.19
+  modal_progress_hud_nsn: ^0.5.1
+  #  graphql: ^5.1.3
+  intl: ^0.17.0
+  cached_network_image: ^3.3.1
+  connectivity_plus: ^6.0.3
+  #  get_storage: ^2.1.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.3
+  lottie: ^3.1.2
+  accordion: ^2.6.0
+  qr_code_scanner: ^1.0.1
+  flutter_sound: ^9.6.0
+  permission_handler: ^11.3.1
+  lecle_downloads_path_provider: ^0.0.2+8
+  audio_video_progress_bar: ^2.0.3
+  audioplayers: ^6.0.0
+  nb_utils: ^7.0.3
+  fl_chart: ^0.68.0
+  pull_to_refresh: ^2.0.0
+  flutter_html: ^3.0.0-beta.2
+  image_picker: ^1.1.2
+  firebase_crashlytics: ^4.0.2
+  another_flutter_splash_screen: ^1.2.1
+  firebase_analytics: ^11.1.0
+  device_info_plus: ^10.1.0
+  just_audio: ^0.9.38
+  internet_connection_checker_plus: ^2.5.0
+  excel: ^4.0.3
+  media_scanner: ^2.1.0
+  open_file_plus: ^3.4.1+1
+  timezone: ^0.9.3
+  package_info_plus: ^8.0.0
+  http: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.11
+  json_serializable: ^6.8.0
+  # the code generator
+  riverpod_generator: ^2.4.0
+  # riverpod_lint makes it easier to work with Riverpod
+  riverpod_lint: ^2.3.10
+  # import custom_lint too as riverpod_lint depends on it
+  custom_lint: ^0.6.4
+  flutter_launcher_icons: ^0.13.1
+  flutter_dotenv: ^5.1.0
+  oauth2: ^2.0.2
+  shared_preferences: ^2.2.3
+
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/expogenie.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/animation/
+    - .env
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
